@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Skills</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+    <style>
+        html {
+            background: url(https://www.cedefop.europa.eu/files/images/identyfying_skills_needs_360x240.jpg);
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body id="skills">
+
+    <div id="navbar">
+        <ul class="hz">
+            <li class="left"><a onmouseover="effect(this)" onmouseout="normal(this)" class="elems"
+                    href="./index.html">Home</a></li>
+            <li class="left"><a onmouseover="effect(this)" onmouseout="normal(this)" class="elems"
+                    href="./Education.html">Education</a></li>
+            <li class="left"><a onmouseover="effect(this)" onmouseout="normal(this)" class="elems" href="#">Skills</a>
+            </li>
+            <li class="left"><a onmouseover="effect(this)" onmouseout="normal(this)" class="elems"
+                    href="./Interests.html">Interests</a></li>
+            <li class="left" id="right"><a onmouseover="effect(this)" onmouseout="normal(this)" class="elems"
+                    href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="gap">
+        home
+    </div>
+
+
+    <body>
+        <div id="myform">
+
+            <form id="inputable">
+                <p>NAME:<input type="text" id="name" placeholder="Enter Your Name"></p> 
+                <p>SKILL:<input type="text" id="skill" placeholder="Enter any Skill"></p>
+                <p>LEVEL: <select name="level" id="level">
+                    <option value="None">None</option>
+                    <option value="Proficient">Proficient</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Beginner">Beginner</option>
+                </select></p>
+                
+            </form>
+            <br>
+            <br>
+            <br>
+            <button id="add" value="Add" onclick="addRow()" style="margin-left:40%;">submit</button>
+            <br>
+            <br>
+            <br>
+
+            <div id="mydata">
+                <table id="mytable" cellpadding="4" style=" margin-left: 40%;">
+                        <tr>
+                                <td>NAME</td>
+                                <td>SKILL</td>
+                                <td>LEVEL</td>
+                            
+                    </tr>
+                </table>
+                 
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="../js/script1.js"></script>
+
+    </body>
+
+
+</html>
